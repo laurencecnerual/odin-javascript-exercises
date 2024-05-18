@@ -1,7 +1,6 @@
 const palindromes = function (str) {
-    let letters = str.toLowerCase().split("").filter(getArrayOfLetters);
+    let letters = str.toLowerCase().split("").filter(getArrayOfLetters).join("");
     let reversedLetters = str.toLowerCase().split("").filter(getArrayOfLetters).reverse().join("")
-    letters = letters.join("");
     return letters === reversedLetters;
 };
 
